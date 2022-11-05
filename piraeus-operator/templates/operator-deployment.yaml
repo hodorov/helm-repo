@@ -45,7 +45,7 @@ spec:
 {{ include "operator.defaultpodsecuritycontext" $ | indent 8 }}
 {{- end }}
       containers:
-        - name: piraeus-operator-operator
+        - name: piraeus-operator
           image: {{ .Values.operator.image }}
           imagePullPolicy: {{ .Values.global.imagePullPolicy | quote }}
           {{- with .Values.operator.args }}

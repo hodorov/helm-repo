@@ -3,18 +3,18 @@ entries:
   piraeus:
   - apiVersion: v2
     appVersion: 1.10.0
-    created: "2022-11-05T18:12:11.902565+03:00"
+    created: "2022-11-05T19:05:45.258663+03:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
       repository: ""
       version: 0.7.5
     description: A Helm chart for Piraeus Operator
-    digest: 608be5658b553a8e31be839d21fa3a74466370f6390f13ef01af2b3e27837785
+    digest: 2557d78bbbc018c4848175f513c61f1d43377ac8f9bd484fab7b342ca281a3dc
     home: https://piraeus.io/
     name: piraeus
     type: application
     urls:
     - https://hodorov.github.io/helm-repo/piraeus-1.10.0.tgz
     version: 1.10.0
-generated: "2022-11-05T18:12:11.897774+03:00"
+generated: "2022-11-05T19:05:45.253214+03:00"

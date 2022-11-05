@@ -23,7 +23,7 @@ stork:
   podsecuritycontext: {}
 csi:
   enabled: true
-  pluginImage: quay.io/piraeusdatastore/piraeus-operator-csi:v0.20.0
+  pluginImage: quay.io/piraeusdatastore/piraeus-csi:v0.20.0
   csiAttacherImage: k8s.gcr.io/sig-storage/csi-attacher:v4.0.0
   csiLivenessProbeImage: k8s.gcr.io/sig-storage/livenessprobe:v2.7.0
   csiNodeDriverRegistrarImage: k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.5.1
@@ -60,7 +60,7 @@ psp:
   unprivilegedRole: ""
 operator:
   replicas: 1 # <- number of replicas for the operator deployment
-  image: quay.io/piraeusdatastore/piraeus-operator-operator:latest
+  image: quay.io/piraeusdatastore/piraeus-operator:v1.10.0
   affinity: {}
   tolerations: []
   resources: {}
@@ -74,7 +74,7 @@ operator:
   extraVolumes: []
   controller:
     enabled: true
-    controllerImage: quay.io/piraeusdatastore/piraeus-operator-server:v1.20.0
+    controllerImage: quay.io/piraeusdatastore/piraeus-server:v1.20.0
     dbConnectionURL: ""
     luksSecret: ""
     dbCertSecret: ""
@@ -100,7 +100,7 @@ operator:
     customAnnotations: {}
   satelliteSet:
     enabled: true
-    satelliteImage: quay.io/piraeusdatastore/piraeus-operator-server:v1.20.0
+    satelliteImage: quay.io/piraeusdatastore/piraeus-server:v1.20.0
     storagePools: {}
     sslSecret: ""
     automaticStorageType: None
@@ -121,7 +121,7 @@ operator:
     customAnnotations: {}
 haController:
   enabled: false
-  image: quay.io/piraeusdatastore/piraeus-operator-ha-controller:v0.3.0
+  image: quay.io/piraeusdatastore/piraeus-ha-controller:v0.3.0
   affinity: {}
   tolerations: []
   resources: {}

@@ -3,7 +3,7 @@ entries:
   piraeus:
   - apiVersion: v2
     appVersion: 1.10.0
-    created: "2022-11-05T18:05:32.476657+03:00"
+    created: "2022-11-05T18:12:11.902565+03:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -15,6 +15,6 @@ entries:
     name: piraeus
     type: application
     urls:
-    - https://github.com/hodorov/helm-repo/piraeus-1.10.0.tgz
+    - https://hodorov.github.io/helm-repo/piraeus-1.10.0.tgz
     version: 1.10.0
-generated: "2022-11-05T18:05:32.471859+03:00"
+generated: "2022-11-05T18:12:11.897774+03:00"

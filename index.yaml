@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  piraeus:
+  - apiVersion: v2
+    appVersion: 1.10.0
+    created: "2022-11-05T18:05:32.476657+03:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: ""
+      version: 0.7.5
+    description: A Helm chart for Piraeus Operator
+    digest: 608be5658b553a8e31be839d21fa3a74466370f6390f13ef01af2b3e27837785
+    home: https://piraeus.io/
+    name: piraeus
+    type: application
+    urls:
+    - https://github.com/hodorov/helm-repo/piraeus-1.10.0.tgz
+    version: 1.10.0
+generated: "2022-11-05T18:05:32.471859+03:00"
